@@ -1,7 +1,7 @@
 document.getElementById('getWeatherBtn').addEventListener('click', function() {
     const city = document.getElementById('cityInput').value;
-    const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Замените на ваш API ключ
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = '2177705de6d179638c8097e2834c4ede'; // Замените на ваш API ключ
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`;
 
     fetch(apiUrl)
         .then(response => response.json())
